@@ -4,6 +4,7 @@
 	<title>SYSY'S HOME</title>
 	<style type="text/css">
 		body {
+			margin: 0;
 			background-image: url("images/1.jpg");
 			font-family: arial;
 		}
@@ -41,6 +42,7 @@
 			height: 250px;
 			opacity: .8;
 			float: left;
+			max-width: 100%;
 		}
 
 		.description {
@@ -62,6 +64,25 @@
 			color: black;
 			font-weight: bold;
 			text-decoration: none;
+		}
+
+		@media (max-width: 600px) {
+			.container {
+				width: 100%;
+			}
+
+			header {
+				text-align: center;
+			}
+
+			.noodle {
+				float: none;
+			}
+			.main {
+			margin-top: 2em;
+			width: 320px;
+			overflow: hidden;
+		}
 		}
 	</style>
 </head>
